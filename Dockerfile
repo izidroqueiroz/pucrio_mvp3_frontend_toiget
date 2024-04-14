@@ -1,16 +1,17 @@
-# Define a imagem base
-FROM node:18-alpine
+# Use an official Node.js runtime as a base image
+FROM node:14
 
-# Define o diretório de trabalho dentro do container
-WORKDIR /toiget
+# Set the working directory
+WORKDIR /app
 
-# Copia os arquivos da aplicação para o diretório de trabalho
-COPY public/ /toiget/public
-COPY src/ /toiget/src
-COPY package.json /toiget/
+# Copy package.json and package-lock.json
+COPY package*.json ./
 
-# Instalação
+# Install project dependencies
 RUN npm install
+
+# Copy your application files
+COPY . .
 
 # Define o comando de execução do front end
 CMD ["npm", "start"]
