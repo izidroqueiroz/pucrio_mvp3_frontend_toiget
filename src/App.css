@@ -1,0 +1,12 @@
+.header {
+  text-align: center;
+}
+
+.map {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+

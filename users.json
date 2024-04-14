@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "firstname": "Izidro",
+      "lastname": "Queiroz",
+      "email": "izidro.queiroz@outlook.com",
+      "password": "1234",
+      "role": "admin"
+    },
+    {
+      "firstname": "Fulano",
+      "lastname": "de Tal",
+      "email": "fulano@gmail.com",
+      "password": "1234",
+      "role": "user"
+    }
+  ]
+}
